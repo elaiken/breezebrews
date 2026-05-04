@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breeze Brews | South Florida Coffee</title>
+    <meta
+      name="description"
+      content="Breeze Brews serves South Florida-inspired coffee with fast mobile ordering, beachy flavors, and a polished cafe experience."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand-lockup" href="#top" aria-label="Breeze Brews home">
+          <img src="OfficialLogo.png" alt="Breeze Brews official logo" />
+          <span>South Florida Coffee</span>
+        </a>
+        <nav class="top-nav" aria-label="Primary">
+          <a href="#menu">Menu</a>
+          <a href="#favorites">Favorites</a>
+          <a href="#story">Story</a>
+          <a href="#order">Order</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Mobile-first coffee ordering</p>
+            <h1>South Florida coffee built for fast pickup and a clean desktop experience.</h1>
+            <p class="hero-text">
+              Breeze Brews brings beach energy, bold espresso, and cold brew favorites into one
+              polished ordering flow. Tap your drink, customize it, and check out in seconds.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#order">Start order</a>
+              <a class="button button-secondary" href="#menu">See menu</a>
+            </div>
+            <ul class="hero-points" aria-label="Highlights">
+              <li>Fast pickup ordering</li>
+              <li>Cold brew and signature lattes</li>
+              <li>Beach-inspired brand experience</li>
+            </ul>
+          </div>
+
+          <aside class="hero-card" aria-label="Featured drink">
+            <div class="hero-card-top">
+              <span class="pill">Today’s favorite</span>
+              <span class="rating">4.9 beachside rating</span>
+            </div>
+            <h2>Sunrise Salted Latte</h2>
+            <p>
+              Espresso, salted caramel, oat milk, and a citrus-vanilla cold foam that fits the
+              Breeze Brews palette and vibe.
+            </p>
+            <div class="price-row">
+              <strong>$6.75</strong>
+              <button class="inline-add" data-id="sunrise-latte" type="button">Add now</button>
+            </div>
+            <div class="drink-preview">
+              <img src="OfficialLogo.png" alt="" aria-hidden="true" />
+            </div>
+          </aside>
+        </section>
+
+        <section class="quick-strip" aria-label="Quick actions">
+          <article>
+            <span>01</span>
+            <h3>Choose a drink</h3>
+            <p>Signature lattes, cold brew, and tropical refreshers.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Customize fast</h3>
+            <p>Milk, sweetness, size, and pickup time stay one tap away.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Grab and go</h3>
+            <p>Sticky cart and mobile checkout keep the flow short.</p>
+          </article>
+        </section>
+
+        <section class="menu-section" id="menu">
+          <div class="section-heading">
+            <p class="eyebrow">Best sellers</p>
+            <h2>Built for quick decisions on mobile.</h2>
+          </div>
+          <div class="menu-grid" id="favorites">
+            <article class="menu-card featured">
+              <span class="pill">Signature</span>
+              <h3>Sunrise Salted Latte</h3>
+              <p>Espresso, salted caramel, oat milk, citrus foam.</p>
+              <div class="menu-meta">
+                <strong>$6.75</strong>
+                <button data-id="sunrise-latte" type="button">Add</button>
+              </div>
+            </article>
+            <article class="menu-card">
+              <span class="pill">Iced</span>
+              <h3>Ocean Cold Brew</h3>
+              <p>Slow-steeped coffee, vanilla bean, sea salt cream.</p>
+              <div class="menu-meta">
+                <strong>$5.95</strong>
+                <button data-id="ocean-cold-brew" type="button">Add</button>
+              </div>
+            </article>
+            <article class="menu-card">
+              <span class="pill">Hot</span>
+              <h3>Palm Mocha</h3>
+              <p>Dark chocolate, espresso, toasted coconut finish.</p>
+              <div class="menu-meta">
+                <strong>$6.4</strong>
+                <button data-id="palm-mocha" type="button">Add</button>
+              </div>
+            </article>
+            <article class="menu-card">
+              <span class="pill">Refresh</span>
+              <h3>Beachside Matcha</h3>
+              <p>Ceremonial matcha, peach nectar, coconut milk.</p>
+              <div class="menu-meta">
+                <strong>$6.1</strong>
+                <button data-id="beachside-matcha" type="button">Add</button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="story-order-wrap">
+          <section class="story-section" id="story">
+            <div class="section-heading">
+              <p class="eyebrow">Brand feel</p>
+              <h2>The site should feel local, breezy, and efficient.</h2>
+            </div>
+            <p>
+              The design leans directly on the official logo system: coffee brown for structure,
+              warm peach and salmon for hospitality, ocean blue for freshness, and palm green for
+              local identity.
+            </p>
+            <div class="stats-grid">
+              <article>
+                <strong>2 min</strong>
+                <span>average mobile order path</span>
+              </article>
+              <article>
+                <strong>7 colors</strong>
+                <span>pulled from the official brand art</span>
+              </article>
+              <article>
+                <strong>1 tap</strong>
+                <span>from sticky cart to checkout</span>
+              </article>
+            </div>
+          </section>
+
+          <section class="order-panel" id="order" aria-label="Order panel">
+            <div class="section-heading">
+              <p class="eyebrow">Order now</p>
+              <h2>Quick order builder</h2>
+            </div>
+
+            <form class="order-form" id="order-form">
+              <label>
+                Drink
+                <select id="drink-select" name="drink">
+                  <option value="sunrise-latte">Sunrise Salted Latte</option>
+                  <option value="ocean-cold-brew">Ocean Cold Brew</option>
+                  <option value="palm-mocha">Palm Mocha</option>
+                  <option value="beachside-matcha">Beachside Matcha</option>
+                </select>
+              </label>
+
+              <div class="field-row">
+                <label>
+                  Size
+                  <select id="size-select" name="size">
+                    <option value="small">Small</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="large">Large</option>
+                  </select>
+                </label>
+                <label>
+                  Milk
+                  <select id="milk-select" name="milk">
+                    <option>Whole milk</option>
+                    <option>Oat milk</option>
+                    <option>Almond milk</option>
+                    <option>Coconut milk</option>
+                  </select>
+                </label>
+              </div>
+
+              <label>
+                Pickup time
+                <select id="pickup-select" name="pickup">
+                  <option>ASAP - 10 min</option>
+                  <option>15 min</option>
+                  <option>25 min</option>
+                  <option>40 min</option>
+                </select>
+              </label>
+
+              <label>
+                Notes
+                <textarea
+                  id="notes"
+                  name="notes"
+                  rows="3"
+                  placeholder="Less sweet, extra ice, light foam..."
+                ></textarea>
+              </label>
+
+              <button class="button button-primary full-width" type="submit">Add to cart</button>
+            </form>
+
+            <div class="cart-card" aria-live="polite">
+              <div class="cart-head">
+                <h3>Your order</h3>
+                <button id="clear-cart" type="button">Clear</button>
+              </div>
+              <ul class="cart-list" id="cart-list">
+                <li class="empty-state">No drinks yet. Add your first order above.</li>
+              </ul>
+              <div class="cart-total">
+                <span>Total</span>
+                <strong id="cart-total">$0.00</strong>
+              </div>
+            </div>
+          </section>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <img src="OfficialLogo.png" alt="" aria-hidden="true" />
+        <div>
+          <strong>Breeze Brews</strong>
+          <p>South Florida Coffee. Fast pickup. Better beach mornings.</p>
+        </div>
+      </footer>
+
+      <div class="sticky-checkout" id="sticky-checkout">
+        <div>
+          <span>Cart total</span>
+          <strong id="sticky-total">$0.00</strong>
+        </div>
+        <button class="button button-primary" type="button">Checkout</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
