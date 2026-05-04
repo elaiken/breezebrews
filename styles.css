@@ -41,6 +41,23 @@ img {
   max-width: 100%;
 }
 
+.logo-crop {
+  display: inline-block;
+  overflow: hidden;
+  flex: 0 0 auto;
+}
+
+.logo-crop img {
+  max-width: none;
+  height: auto;
+}
+
+.logo-horizontal img {
+  width: 440px;
+  margin-left: -625px;
+  margin-top: -120px;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -90,11 +107,15 @@ textarea {
   min-width: 0;
 }
 
-.brand-lockup img {
-  width: 58px;
-  height: 58px;
-  object-fit: cover;
-  border-radius: 50%;
+.logo-header {
+  width: 170px;
+  height: 64px;
+  border-radius: 16px;
+}
+
+.logo-header img {
+  transform: scale(0.43);
+  transform-origin: top left;
 }
 
 .brand-lockup span {
@@ -294,9 +315,17 @@ textarea {
     linear-gradient(180deg, rgba(255, 193, 179, 0.12), rgba(77, 147, 184, 0.16));
 }
 
-.drink-preview img {
-  width: min(100%, 280px);
+.logo-hero {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: 122px;
   margin: 0 auto;
+}
+
+.logo-hero img {
+  transform: scale(0.72);
+  transform-origin: top left;
 }
 
 .quick-strip {
@@ -465,11 +494,15 @@ textarea {
   border-radius: var(--radius-lg);
 }
 
-.site-footer img {
-  width: 54px;
+.logo-footer {
+  width: 148px;
   height: 54px;
-  object-fit: cover;
-  border-radius: 50%;
+  border-radius: 14px;
+}
+
+.logo-footer img {
+  transform: scale(0.37);
+  transform-origin: top left;
 }
 
 .sticky-checkout {
