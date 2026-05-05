@@ -90,18 +90,11 @@ textarea {
 .brand-lockup {
   display: flex;
   align-items: center;
-  gap: 12px;
   min-width: 0;
 }
 
 .brand-logo-header {
-  width: 170px;
-}
-
-.brand-lockup span {
-  font-size: 0.9rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  width: 240px;
 }
 
 .top-nav {
@@ -292,7 +285,7 @@ textarea {
 }
 
 .brand-logo-hero {
-  width: min(100%, 340px);
+  width: min(100%, 360px);
   margin: 0 auto;
 }
 
@@ -489,7 +482,7 @@ textarea {
 }
 
 .brand-logo-footer {
-  width: 78px;
+  width: 86px;
 }
 
 .sticky-checkout {
@@ -546,10 +539,6 @@ textarea {
   .site-header {
     top: 8px;
     padding: 12px 14px;
-  }
-
-  .brand-lockup span {
-    display: none;
   }
 
   .hero,
