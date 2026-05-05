@@ -288,11 +288,7 @@ textarea {
 
 .drink-preview {
   margin-top: 22px;
-  padding: 18px;
-  border-radius: 26px;
-  background:
-    radial-gradient(circle at top, rgba(255, 255, 255, 0.96), rgba(255, 246, 232, 0.7)),
-    linear-gradient(180deg, rgba(255, 193, 179, 0.12), rgba(77, 147, 184, 0.16));
+  padding: 8px 0 0;
 }
 
 .brand-logo-hero {
@@ -383,7 +379,8 @@ textarea {
   margin-top: 26px;
   padding: 18px;
   border-radius: 24px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(77, 147, 184, 0.08));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(77, 147, 184, 0.04));
+  border: 1px solid rgba(107, 79, 58, 0.08);
 }
 
 .brand-showcase-copy p:last-of-type {
@@ -393,6 +390,7 @@ textarea {
 .brand-logo-stacked {
   width: 100%;
   max-width: 210px;
+  justify-self: center;
 }
 
 .brand-logo-icon {
