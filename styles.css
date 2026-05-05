@@ -41,21 +41,8 @@ img {
   max-width: 100%;
 }
 
-.logo-crop {
-  display: inline-block;
-  overflow: hidden;
+.brand-logo {
   flex: 0 0 auto;
-}
-
-.logo-crop img {
-  max-width: none;
-  height: auto;
-}
-
-.logo-horizontal img {
-  width: 440px;
-  margin-left: -625px;
-  margin-top: -120px;
 }
 
 a {
@@ -107,15 +94,8 @@ textarea {
   min-width: 0;
 }
 
-.logo-header {
+.brand-logo-header {
   width: 170px;
-  height: 64px;
-  border-radius: 16px;
-}
-
-.logo-header img {
-  transform: scale(0.43);
-  transform-origin: top left;
 }
 
 .brand-lockup span {
@@ -315,17 +295,9 @@ textarea {
     linear-gradient(180deg, rgba(255, 193, 179, 0.12), rgba(77, 147, 184, 0.16));
 }
 
-.logo-hero {
-  display: block;
-  width: 100%;
-  max-width: 320px;
-  height: 122px;
+.brand-logo-hero {
+  width: min(100%, 340px);
   margin: 0 auto;
-}
-
-.logo-hero img {
-  transform: scale(0.72);
-  transform-origin: top left;
 }
 
 .quick-strip {
@@ -401,6 +373,30 @@ textarea {
   grid-template-columns: 0.9fr 1.1fr;
   gap: 22px;
   margin-top: 22px;
+}
+
+.brand-showcase {
+  display: grid;
+  grid-template-columns: minmax(0, 220px) 1fr;
+  gap: 18px;
+  align-items: center;
+  margin-top: 26px;
+  padding: 18px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(77, 147, 184, 0.08));
+}
+
+.brand-showcase-copy p:last-of-type {
+  margin-bottom: 18px;
+}
+
+.brand-logo-stacked {
+  width: 100%;
+  max-width: 210px;
+}
+
+.brand-logo-icon {
+  width: 130px;
 }
 
 .stats-grid {
@@ -494,15 +490,8 @@ textarea {
   border-radius: var(--radius-lg);
 }
 
-.logo-footer {
-  width: 148px;
-  height: 54px;
-  border-radius: 14px;
-}
-
-.logo-footer img {
-  transform: scale(0.37);
-  transform-origin: top left;
+.brand-logo-footer {
+  width: 78px;
 }
 
 .sticky-checkout {
@@ -569,7 +558,8 @@ textarea {
   .quick-strip,
   .menu-grid,
   .stats-grid,
-  .field-row {
+  .field-row,
+  .brand-showcase {
     grid-template-columns: 1fr;
   }
 
@@ -583,6 +573,11 @@ textarea {
 
   .hero h1 {
     max-width: 10ch;
+  }
+
+  .brand-logo-stacked,
+  .brand-logo-icon {
+    margin: 0 auto;
   }
 
   .section-heading h2 {
