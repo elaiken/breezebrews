@@ -285,7 +285,7 @@ textarea {
 }
 
 .brand-logo-hero {
-  width: min(100%, 360px);
+  width: min(100%, 260px);
   margin: 0 auto;
 }
 
@@ -380,9 +380,9 @@ textarea {
   margin-bottom: 18px;
 }
 
-.brand-logo-stacked {
+.brand-logo-showcase {
   width: 100%;
-  max-width: 210px;
+  max-width: 280px;
   justify-self: center;
 }
 
@@ -562,7 +562,7 @@ textarea {
     max-width: 10ch;
   }
 
-  .brand-logo-stacked,
+  .brand-logo-showcase,
   .brand-logo-icon {
     margin: 0 auto;
   }
