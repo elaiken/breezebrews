@@ -285,7 +285,7 @@ textarea {
 }
 
 .brand-logo-hero {
-  width: min(100%, 260px);
+  width: min(100%, 320px);
   margin: 0 auto;
 }
 
@@ -386,10 +386,6 @@ textarea {
   justify-self: center;
 }
 
-.brand-logo-icon {
-  width: 130px;
-}
-
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -482,7 +478,7 @@ textarea {
 }
 
 .brand-logo-footer {
-  width: 86px;
+  width: 180px;
 }
 
 .sticky-checkout {
@@ -562,8 +558,7 @@ textarea {
     max-width: 10ch;
   }
 
-  .brand-logo-showcase,
-  .brand-logo-icon {
+  .brand-logo-showcase {
     margin: 0 auto;
   }
 
