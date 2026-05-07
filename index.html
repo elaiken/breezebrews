@@ -19,6 +19,10 @@
             src="official-logo-1.png"
             alt="Breeze Brews horizontal logo"
           />
+          <div class="brand-meta">
+            <strong>Breeze Brews</strong>
+            <span>South Florida Coffee</span>
+          </div>
         </a>
         <nav class="top-nav" aria-label="Primary">
           <a href="#menu">Menu</a>
@@ -46,6 +50,16 @@
               <li>Cold brew and signature lattes</li>
               <li>Beach-inspired brand experience</li>
             </ul>
+            <div class="hero-service-bar" aria-label="Service details">
+              <div>
+                <strong>Open today</strong>
+                <span>6:30 AM to 6:00 PM</span>
+              </div>
+              <div>
+                <strong>Pickup pace</strong>
+                <span>Most drinks ready in 10 minutes</span>
+              </div>
+            </div>
           </div>
 
           <aside class="hero-card" aria-label="Featured drink">
@@ -65,8 +79,8 @@
             <div class="drink-preview">
               <img
                 class="brand-logo brand-logo-hero"
-                src="official-logo-1.png"
-                alt="Breeze Brews horizontal logo"
+                src="official-logo-2.png"
+                alt="Breeze Brews BB cups logo"
               />
             </div>
           </aside>
@@ -100,6 +114,7 @@
               <span class="pill">Signature</span>
               <h3>Sunrise Salted Latte</h3>
               <p>Espresso, salted caramel, oat milk, citrus foam.</p>
+              <small class="menu-note">Best for smooth sweetness and quick morning pickup.</small>
               <div class="menu-meta">
                 <strong>$6.75</strong>
                 <button data-id="sunrise-latte" type="button">Add</button>
@@ -109,6 +124,7 @@
               <span class="pill">Iced</span>
               <h3>Ocean Cold Brew</h3>
               <p>Slow-steeped coffee, vanilla bean, sea salt cream.</p>
+              <small class="menu-note">Clean finish with a stronger coffee edge.</small>
               <div class="menu-meta">
                 <strong>$5.95</strong>
                 <button data-id="ocean-cold-brew" type="button">Add</button>
@@ -118,6 +134,7 @@
               <span class="pill">Hot</span>
               <h3>Palm Mocha</h3>
               <p>Dark chocolate, espresso, toasted coconut finish.</p>
+              <small class="menu-note">A heavier cup for people who want depth.</small>
               <div class="menu-meta">
                 <strong>$6.4</strong>
                 <button data-id="palm-mocha" type="button">Add</button>
@@ -127,6 +144,7 @@
               <span class="pill">Refresh</span>
               <h3>Beachside Matcha</h3>
               <p>Ceremonial matcha, peach nectar, coconut milk.</p>
+              <small class="menu-note">Lighter, fruit-forward, and good over ice.</small>
               <div class="menu-meta">
                 <strong>$6.1</strong>
                 <button data-id="beachside-matcha" type="button">Add</button>
@@ -251,18 +269,24 @@
 
       <footer class="site-footer">
         <img class="brand-logo brand-logo-footer" src="official-logo-2.png" alt="" aria-hidden="true" />
-        <div>
+        <div class="footer-copy">
           <strong>Breeze Brews</strong>
           <p>South Florida Coffee. Fast pickup. Better beach mornings.</p>
+        </div>
+        <div class="footer-meta">
+          <span>Mobile ordering ready</span>
+          <span>Pickup in minutes</span>
         </div>
       </footer>
 
       <div class="sticky-checkout" id="sticky-checkout">
         <div>
-          <span>Cart total</span>
+          <span id="sticky-label">Cart total</span>
           <strong id="sticky-total">$0.00</strong>
         </div>
-        <button class="button button-primary" type="button">Checkout</button>
+        <button class="button button-primary" id="checkout-button" type="button" disabled>
+          Checkout
+        </button>
       </div>
     </div>
 

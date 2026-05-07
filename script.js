@@ -16,6 +16,9 @@ const cart = [];
 const cartList = document.getElementById("cart-list");
 const cartTotal = document.getElementById("cart-total");
 const stickyTotal = document.getElementById("sticky-total");
+const stickyLabel = document.getElementById("sticky-label");
+const stickyCheckout = document.getElementById("sticky-checkout");
+const checkoutButton = document.getElementById("checkout-button");
 const orderForm = document.getElementById("order-form");
 const drinkSelect = document.getElementById("drink-select");
 const sizeSelect = document.getElementById("size-select");
@@ -51,6 +54,9 @@ function renderCart() {
       '<li class="empty-state">No drinks yet. Add your first order above.</li>';
     cartTotal.textContent = "$0.00";
     stickyTotal.textContent = "$0.00";
+    stickyLabel.textContent = "Cart total";
+    stickyCheckout.classList.add("is-empty");
+    checkoutButton.disabled = true;
     return;
   }
 
@@ -73,6 +79,9 @@ function renderCart() {
   const formatted = formatCurrency(total);
   cartTotal.textContent = formatted;
   stickyTotal.textContent = formatted;
+  stickyLabel.textContent = `${cart.length} item${cart.length === 1 ? "" : "s"}`;
+  stickyCheckout.classList.remove("is-empty");
+  checkoutButton.disabled = false;
 }
 
 function addToCart(drinkId, size = "medium") {
